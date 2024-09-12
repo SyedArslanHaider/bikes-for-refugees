@@ -23,6 +23,36 @@ button {
   color: var(--grey-dark);
   font-size: 1rem;
 }
+.hero button:nth-child(3){
+  background-color: #c05326;
+  color: white;
+  padding: 5px;
+  border: 1px solid #c05326;
+  font-size: small;
+  border-radius: 5px;
+  margin-left: 2rem;
+  position: absolute;
+  top: 57%;
+}
+.hero button:nth-child(4){
+  background-color: white;
+  color: #c05326;
+  padding: 5px;
+  border: 1px solid white;
+  font-size: small;
+  border-radius: 5px;
+  margin-left: 9.8rem;
+  position: absolute;
+  top: 57%;
+}
+.btn{
+    background-color: #c05326;
+    color: white;
+    padding: 5px;
+    border: 1px solid #c05326;
+    font-size: small;
+    border-radius: 5px;
+}
 
 h1,h2,h3,h4,h5,h6 {
   margin-top: 0;
@@ -67,6 +97,7 @@ p {
 
 .navigation__item {
   padding: 0.5rem 0;
+  padding: 20px;
 }
 
 .navigation__link {
@@ -120,18 +151,29 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  height: 315px;
+  background-image: url('/images/header-bike.jpg');
   background-color: var(--grey-light);
+  position: relative;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: white;
+  font-weight: bold;
+  margin-left: 2rem;
+  position: absolute;
+  top: 20%;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: white;
+  margin-left: 2rem;
+  position: absolute;
+  top: 40%;
 }
 
 
@@ -145,6 +187,7 @@ p {
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
+  margin-top: 40px;
 }
 
 .heading-underline:before {
@@ -163,14 +206,21 @@ p {
 
 .article {
   margin-bottom: 1rem;
+  border: 1px solid #d5d7d8;
+  display: flex;
+  gap: 15px;
 }
-
+.article1{
+  padding: 20px;
+}
 .article__title {
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
 }
-
+.article__content{
+  padding: 15px;
+}
 .article__title-link {
   text-decoration: none;
   color: var(--orange-dark);
@@ -209,6 +259,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
 }
 
 /* Sidebar */
@@ -218,7 +269,10 @@ p {
   flex-direction: column;
   min-width: 350px;
 }
-
+.bottom-content{
+  display: flex;
+  gap: 15px;
+}
 /* Footer */
 
 .footer {
